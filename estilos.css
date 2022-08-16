@@ -1,0 +1,76 @@
+.flex-row{
+	padding: 0;/*espacio entre texto y caja*/
+	margin: 0;/*espacio entre caja y caja*/
+	list-style: none;/*deshabilitar elementos de lista*/
+	display: -webkit-box;/*safari*/
+	display: -moz-box;/*mozilla*/
+	display: -ms-flexbox;/*microsoft*/
+	display: -webkit-flex;/*Chrome*/
+	display: -o-flexbox;/*Opera*/
+	display: flex;/*propiedad para habilitar el flexbox*/
+	flex-wrap: flex;
+	-webkit-flex-flow:row wrap;
+	justify-content: space-around;/*espacio entre cajas*/
+}
+.flex-col-100{
+	background-color: #5ad;/*azul claro de fondo*/
+	padding: 5px;/*espacio entre texto y caja*/
+	width: 99%;/*ancho de caja*/
+	height: 100%;/*alto de caja*/
+	margin-top: 10px;/*espacio entre borde de pantalla y caja Top*/
+	line-height: 150px;/*alineación de texto en la vertical*/
+	color:#fff;/*color de letra*/
+	font-weight: bold;/*negrita*/
+	font-size: 3em;/*tamaño de fuente*/
+	text-align: center;/*alineación de texto*/
+}
+.flex-col-50{
+	background-color: #5ad;/*azul claro de fondo*/
+	padding: 5px;/*espacio entre texto y caja*/
+	width: 49%;/*ancho de caja*/
+	height: 100%;/*alto de caja*/
+	margin-top: 10px;/*espacio entre borde de pantalla y caja Top*/
+	line-height: 150px;/*alineación de texto en la vertical*/
+	color:#fff;/*color de letra*/
+	font-weight: bold;/*negrita*/
+	font-size: 3em;/*tamaño de fuente*/
+	text-align: center;/*alineación de texto*/
+}
+.flex-col-33{
+	background-color: #5ad;/*azul claro de fondo*/
+	padding: 5px;/*espacio entre texto y caja*/
+	width: 32%;/*ancho de caja*/
+	height: 100%;/*alto de caja*/
+	margin-top: 10px;/*espacio entre borde de pantalla y caja Top*/
+	line-height: 150px;/*alineación de texto en la vertical*/
+	color:#fff;/*color de letra*/
+	font-weight: bold;/*negrita*/
+	font-size: 3em;/*tamaño de fuente*/
+	text-align: center;/*alineación de texto*/
+}
+.flex-col-19{
+	background-color: #5ad;/*azul claro de fondo*/
+	padding: 5px;/*espacio entre texto y caja*/
+	width: 19%;/*ancho de caja*/
+	height: 100%;/*alto de caja*/
+	margin-top: 10px;/*espacio entre borde de pantalla y caja Top*/
+	line-height: 150px;/*alineación de texto en la vertical*/
+	color:#fff;/*color de letra*/
+	font-weight: bold;/*negrita*/
+	font-size: 3em;/*tamaño de fuente*/
+	text-align: center;/*alineación de texto*/
+}
+@media (max-width:400px){
+	.flex-row, .flex-col-50, .flex-col-33{
+		display: block;/*disposición de cajas una debajo de la otra*/
+		width: 100%;/*ancho de la caja a tamaño de pantalla 400*/
+		margin: 0 0 10px 0;/*espacio entre cajas*/
+	}
+}
+@media (max-width:600px){
+	.flex-col-19{
+		display: block;/*disposición de cajas una debajo de la otra*/
+		width: 100%;/*ancho de la caja a tamaño de pantalla 400*/
+		margin: 0 0 10px 0;/*espacio entre cajas*/
+	}
+}
